@@ -282,14 +282,8 @@ class ViewController: UIViewController {
     
     @objc func uploadBtnTapped() {
         let image = canvasView.takeScreenshot()
-        if image != nil {
         self.uploadImageToFirebaseStorage(image: image)
-        }else {
-        canvasView.label.isHidden = false
-        }
     }
-    
- 
     
     @objc func moreBtnTapped() {
         
